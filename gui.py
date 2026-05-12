@@ -1,7 +1,9 @@
 import tkinter as tk
+from PIL import Image, ImageTk
+
 import time
 
-random_char = input('test: ') #will display input in label below
+random_char = 'timer goes here'
 time.sleep(1)
 
 
@@ -13,7 +15,7 @@ window.title('Pomodoro Timer')
 
 header = tk.Label(window)
 
-header.config(text='pomodoro',font=('arial',25))
+header.config(text='Pomodoro Timer',font=('arial',25))
 
 header.pack()
 
@@ -23,7 +25,7 @@ timer = tk.Label(window)
 
 timer.config(text=f'{random_char}',font=('georgia',20))
 
-timer.pack()
+timer.place(x=300,y=300)
 
 
 
